@@ -7,24 +7,28 @@
 body {
     background-color: #d9dcd6;
 }
-/* The .banner class name was assigned to the <header> element in HTML*/
-.banner {
+/* The .header as a class name was replaced with the semantic HTML <header> tag.
+Therefore, the '.header' class reference has been replaced with a simpler 'header' tag reference
+to which the formatting below is applied*/
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.banner h1 {
+h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.banner h1 .seo {
+.seo {
     color: #d9dcd6;
 }
-
-.banner nav {
+/* Similarly, the 'div' tags denoting links in the navigation bar
+have now been replaced with 'nav' tags to which the formatting below
+is applied*/
+nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,11 +36,11 @@ body {
     font-size: 20px;
 }
 
-.banner nav ul {
+nav ul {
     list-style-type: none;
 }
 
-.banner nav ul li {
+nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -59,6 +63,58 @@ p {
     background-position: center;
 }
 
+/* The <div class=content> tag in HTML was replaced
+with a semantic <section> tag which is now used
+ to apply formatting to the main section of 
+the website;
+
+The 'section' code is also now appears
+above the .float-left and .float-right code below
+for easier readability in logical order, and to
+aid the website loading as the code is read 
+from top to bottom.*/
+
+section {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* Since there are two sections in HTML
+to which the semantic <figure> tag can be applied, 
+I've assigned them different classes:
+an 'icon' and an 'illustration'.
+
+I used the 'illustration' class to apply
+formatting to the three repeating elements
+inside the <figure class=illustration> tag;
+
+I have also moved the illustration part of CSS code
+to appear after the section part for easier readability
+in logical order, and to aid the website loading
+as the code is read from top to bottom.  */
+
+.illustration {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+
+.illustration img {
+    max-height: 200px;
+}
+
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+
 .float-left {
     float: left;
     margin-right: 25px;
@@ -69,14 +125,12 @@ p {
     margin-left: 25px;
 }
 
-/* The <div class=content> tag in HTML was replaced with a semantic <section> tag which is now used to apply formatting to the main section of the website */
-section {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
 
-.benefits {
+/* The <div class=benefits> HTML tag has been replaced with
+the semantic <aside> tag, to which the below formatting
+is applied;
+*/
+aside {
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -86,46 +140,29 @@ section {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-/* The three elements below all have the same formatting applied to them.
-I've grouped them together, separated by commas, so that the code below doesn't repeat itself three times. */
-.benefit-lead, .benefit-brand, .benefit-cost {
+/* Since there are two sections in HTML
+to which the semantic <figure> tag can be applied, 
+I've assigned them different classes:
+an 'icon' and an 'illustration'.
+
+I used the 'icon' class to apply
+formatting to the three repeating elements
+inside the <figure class=icon> tag  */
+
+.icon {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-/* Similarly, the three elements below have identical formatting applied to them and are now grouped */
-.benefit-lead h3, .benefit-brand h3, .benefit-cost h3 {
+h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-/* The three img elements can also be grouped as they have the same formatting applied to them */
-.benefit-lead img, .benefit-brand img, .benefit-cost img {
+.icon img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
-}
-
-/* The three elements below have also been grouped for the sake of avoiding repeating the same formatting code*/
-.search-engine-optimization, .online-reputation-management, .social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/* Since the three images all have the same max-height value applied to them, they've been grouped as well */
-
-.search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
-    max-height: 200px;
-}
-
-/* Finally, the three elements below have also been grouped as they have the same formatting applied to them */
-.search-engine-optimization h2, .online-reputation-management h2, .social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
 }
 
 
