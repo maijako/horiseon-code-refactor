@@ -69,7 +69,8 @@ p {
     margin-left: 25px;
 }
 
-.content {
+/* The <div class=content> tag in HTML was replaced with a semantic <section> tag which is now used to apply formatting to the main section of the website */
+section {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
