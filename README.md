@@ -2,11 +2,15 @@
 
 ## Description
  
-This is a refactored code for the Horiseon marketing agency to make it more accessible and optimized for search engines.
+This is a refactored code for the [Horiseon marketing agency website](https://maijako.github.io/horiseon-code-refactor/) to make it more accessible and optimized for search engines.
 
 The refactored code follows accessibility standards and includes relevant metadata and semantic html tags for search engine optimization.
 
 All of the changes made during refactoring are reflected in comments.
+
+The final mock up of the website looks the same as the original, but loads faster and includes functioning links in the navigation bar:
+
+![Horiseon website mock up](./assets/images/horiseon-mockup.png "mockup")
 
 ## Usage
 
